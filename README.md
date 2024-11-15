@@ -1,1 +1,3 @@
 # Project-1-using-html-and-css
+
+Apna Coffee Wala is a front-end website design for a coffee shop featuring a modern, responsive layout. It includes a sticky navigation bar, a full-screen hero section with animated text, and a menu showcasing various food and drink items. The site also highlights best-selling items and includes a stylish footer with customer service links. The design incorporates smooth animations and transitions to enhance user experience. Built with HTML and CSS, this project demonstrates the use of Flexbox, Grid, and keyframe animations to create an engaging and visually appealing interface.
