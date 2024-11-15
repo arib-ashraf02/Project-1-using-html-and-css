@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Card</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: url("Gemini_Generated_Image_iyrfadiyrfadiyrf.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .menu-card {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-header {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #444;
+    margin-bottom: 20px;
+  }
+
+  .menu-item {
+    display: grid;
+    grid-template-columns: 1fr 80px 80px;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+  }
+
+  .menu-item:last-child {
+    border-bottom: none;
+  }
+
+  .menu-item-name {
+    font-weight: bold;
+  }
+
+  .menu-item-price {
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .buy-button {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .buy-button:hover {
+    background-color: gray;
+  }
+</style>
+</head>
+<body>
+  <div class="menu-card">
+    <div class="menu-header">Menu</div>
+    <div class="menu-item">
+      <div class="menu-item-name">Hot Coffee</div>
+      <div class="menu-item-price">₹100</div>
+      <button class="buy-button">Buy</button>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-name">Americano</div>
+      <div class="menu-item-price">₹120</div>
+      <button class="buy-button">Buy</button>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-name">Flat White</div>
+      <div class="menu-item-price">₹130</div>
+      <button class="buy-button">Buy</button>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-name">Latte</div>
+      <div class="menu-item-price">₹140</div>
+      <button class="buy-button">Buy</button>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-name">Cappuccino</div>
+      <div class="menu-item-price">₹150</div>
+      <button class="buy-button">Buy</button>
+    </div>
+  </div>
+</body>
+</html>

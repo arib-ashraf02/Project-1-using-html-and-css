@@ -1,0 +1,455 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --navbar-bg-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black */
+    --highlight-color: #ff6347;
+    /* Tomato color */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url("rr-abrot-pNIgH0y3upM-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 11, 11, 0.267);
+    /* Overlay for better text readability */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    top: -100px;
+    z-index: 1000;
+    animation: slideDown 1s forwards;
+}
+
+.navbar {
+    padding: 30px;
+}
+
+/* Navbar Brand with Logo */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-logo {
+    width: 100px;
+    /* Adjust size as needed */
+    height: px;
+    /* Adjust size as needed */
+    margin-right: 10px;
+    /* Spacing between logo and text */
+
+}
+
+.navbar-brand:hover {
+    color: rgb(104, 86, 86);
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+    color: rgb(104, 86, 86);
+}
+
+/* Slide-Down Animation for Navbar */
+@keyframes slideDown {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+/* Rest of your CSS remains the same */
+
+
+
+
+
+
+
+
+
+
+/* Hero Text Animation */
+.hero-text {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+    /* Start with text invisible */
+    animation: fadeInUp 2s forwards;
+    /* Fade and slide up */
+}
+
+/* Animation for Hero Text */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+        /* Start below */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* End at normal position */
+    }
+}
+
+/* Rest of your styles remain unchanged */
+
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 24px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.browse-categories {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.browse-categories::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin-left: 10px;
+
+
+}
+
+/* Menu Container to Hold Items Horizontally */
+.menu-container {
+    display: flex;
+    /* Flexbox to align items horizontally */
+    justify-content: space-between;
+    /* Distribute items with space between */
+    margin: 30px 0;
+}
+
+/* Menu Item */
+.menu-item {
+    text-align: center;
+    width: 30%;
+    /* Set each menu item to take up 30% of the width */
+    opacity: 0;
+    /* Start hidden */
+    animation: fadeInUp 2s forwards;
+    /* Animation for fading and moving up */
+    animation-delay: 0.5s;
+    /* Add delay for the second item */
+}
+
+.menu-item-image {
+    width: 100%;
+    /* Make image take up the full width of the menu item */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    /* Optional: Rounded corners for the image */
+}
+
+.menu-item-title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.menu-item-description {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Animation for Menu Item */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+        /* Start below */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* End at normal position */
+    }
+}
+
+
+
+.menu-header {
+    margin-top: 0;
+    /* Remove any top margin */
+    padding-top: 0;
+    /* Remove any top padding */
+}
+
+.menu-item-image {
+    display: block;
+    /* Removes any potential space caused by inline images */
+    margin-bottom: 0;
+    /* Remove any bottom margin */
+}
+
+.menu-heading {
+    margin-top: 0;
+    /* Remove any top margin on the heading */
+}
+
+
+
+.bestseller {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+
+    background-color: lightslategray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.bestseller::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin-left: 10px;
+
+
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.pizza-menu {
+    text-align: center;
+    margin: 20px;
+}
+
+.pizza-card {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pizza-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.rating {
+    color: gold;
+}
+
+
+
+
+/* Remove the arrow */
+.pizza-menu {
+    overflow: hidden;
+    /* Prevent scrollbar */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    background-image: url("volodymyr-proskurovskyi-he7QnLQRB9g-unsplash.jpg");
+    /* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+
+
+}
+
+
+
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+}
+
+.footer h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.footer-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #ffdd57;
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffdd57;
+}
+
+.footer-links a:hover::after {
+    width: 100%;
+}
+
+.footer-content h2,
+.footer-links a {
+    animation: fadeIn 1s ease;
+}
+
+.footer-content h2 {
+    animation-delay: 0.2s;
+}
+
+.footer-links div a {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.footer-links div {
+    text-align: left;
+}
+
+.footer-links a {
+    font-size: 18px;
+}
